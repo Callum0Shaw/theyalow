@@ -10,26 +10,31 @@
   <body>
     <header>
       <div id="nav-logo">
-        <img src="./Assets/Logo - mob.svg" alt="Logo" />
+        <img
+          srcset="./Assets/Logo - mob.svg 38w, ./Assets/nav-logo-dt.svg 85w"
+          sizes="(max-width: 1000px) 38px, 85px"
+          src="./Assets/Logo - mob.svg"
+          alt="Logo"
+        />
         <h1>Theyalow</h1>
       </div>
       <nav>
         <ul id="nav-bar">
-          <li class="nav-link-container">
+          <li class="nav-link-container" id="about-us">
             <a class="nav-link" id="left-nav-item" href=""
-              ><img src="./Assets/profile-icon.svg" alt="" />
+              ><img class="nav-icon" src="./Assets/profile-icon.svg" alt="" />
               <p class="nav-link-text">About us</p></a
             >
           </li>
-          <li class="nav-link-container">
+          <li class="nav-link-container" id="services">
             <a class="nav-link" id="middle-nav-item" href=""
-              ><img src="./Assets/wrench-icon.svg" alt="" />
+              ><img class="nav-icon" src="./Assets/wrench-icon.svg" alt="" />
               <p class="nav-link-text">Services</p></a
             >
           </li>
-          <li class="nav-link-container">
+          <li class="nav-link-container" id="contact">
             <a class="nav-link" id="right-nav-item" href=""
-              ><img src="./Assets/mail-icon.svg" alt="" />
+              ><img class="nav-icon" src="./Assets/mail-icon.svg" alt="" />
               <p class="nav-link-text">Contact</p></a
             >
           </li>
@@ -37,56 +42,66 @@
       </nav>
     </header>
     <main>
-      <section id="player">
-        <picture class="image-container">
-          <img
-            id="video-image"
-            src="./Assets/video-mobile.png"
-            alt="Video of 3 birds"
-          />
-          <button class="play-circle-button" type="button">
+      <section id="title-section">
+        <div id="player">
+          <picture class="image-container">
             <img
-              class="play-circle-img"
-              src="./Assets/play-circle.svg"
-              alt="play"
+              id="video-image"
+              srcset="/Assets/video-mobile.png 640w, ./Assets/video-dt.png 641w"
+              sizes="(max-width: 1000px) 640px,
+         641px"
+              src="./Assets/video-dt.png"
+              alt="Video of 3 birds"
             />
-          </button>
-          <div id="control-container">
-            <img id="square-play" src="./Assets/square-play.png" alt="" />
-            <div id="slider-container">
+            <button class="play-circle-button" type="button">
               <img
-                id="back-slider"
-                src="./Assets/rounded-rectangle.png"
-                alt=""
+                class="play-circle-img"
+                src="./Assets/play-circle.svg"
+                alt="play"
               />
-              <img id="progress" src="./Assets/progress-bar.png" alt="" />
+            </button>
+            <div id="control-container">
+              <img id="square-play" src="./Assets/square-play.png" alt="" />
+              <div id="slider-container">
+                <img
+                  id="back-slider"
+                  src="./Assets/rounded-rectangle.png"
+                  alt=""
+                />
+                <img id="progress" src="./Assets/progress-bar.png" alt="" />
+              </div>
+              <img id="volume" src="./Assets/volume.png" alt="" />
             </div>
-            <img id="volume" src="./Assets/volume.png" alt="" />
-          </div>
-        </picture>
-        <div id="video-slider"></div>
+          </picture>
+        </div>
+        <div id="title-text">
+          <h2>The cool <span>the minimal</span></h2>
+        </div>
       </section>
-      <section id="midbar">
-        <figure class="midbar-item">
-          <img class="midbar-img" src="./Assets/download.png" alt="" />
-          <figcaption>Better Design</figcaption>
-        </figure>
-        <figure class="midbar-item">
-          <img class="midbar-img" src="./Assets/leaf.png" alt="" />
-          <figcaption>Customise</figcaption>
-        </figure>
-        <figure class="midbar-item">
-          <img class="midbar-img" src="./Assets/plane.png" alt="" />
-          <figcaption>Its free</figcaption>
-        </figure>
+      <section id="midbar-container">
+        <div id="midbar">
+          <figure class="midbar-item">
+            <img class="midbar-img" src="./Assets/download.png" alt="" />
+            <figcaption>Better Design</figcaption>
+          </figure>
+          <figure class="midbar-item">
+            <img class="midbar-img" src="./Assets/leaf.png" alt="" />
+            <figcaption>Customise</figcaption>
+          </figure>
+          <figure class="midbar-item">
+            <img class="midbar-img" src="./Assets/plane.png" alt="" />
+            <figcaption>Its free</figcaption>
+          </figure>
+        </div>
       </section>
       <section id="section-1">
         <div id="sec-1-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut
           </p>
           <button id="expand-button">
-            <img id="expand-icon" src="./Assets/expand.svg" alt="">
+            <img id="expand-icon" src="./Assets/expand.svg" alt="" />
           </button>
         </div>
         <picture class="image-container" id="sec-1-img">
@@ -109,19 +124,22 @@
         </picture>
         <div id="twitter-right">
           <ul id="twitter-feed">
-            <li>
+            <li class="twitter-bubble">
+              <img src="./Assets/twitter-bubble-selected.svg" alt="" />
               <p>Daily Mobile UI Design Inspiration #1 via @cssauthor/p></p>
             </li>
-            <li>
+            <li class="twitter-bubble">
+              <img src="./Assets/twitter-bubble.svg" alt="" />
               <p>Daily Mobile UI Design Inspiration #2 via @cssauthor/p></p>
             </li>
-            <li>
+            <li class="twitter-bubble">
+              <img src="./Assets/twitter-bubble.svg" alt="" />
               <p>Daily Mobile UI Design Inspiration #3 via @cssauthor/p></p>
             </li>
           </ul>
           <form id="twitter-form" action="">
-            <input type="text" name="" id="" />
-            <button type="submit">Tweet</button>
+            <input type="text" name="" id="twitter-input" />
+            <button id="twitter-submit" type="submit">Tweet</button>
           </form>
         </div>
       </section>
@@ -129,15 +147,17 @@
         <h2>Lorem ipsum dolor sit amet</h2>
         <picture>
           <img
-            src=""
+            src="./Assets/its-free-mob.png"
             alt="100% free sticker ontop of deskop, tablet, and phone. "
           />
         </picture>
       </section>
     </main>
     <footer>
-      <img src="" alt="Theyalow logo" />
-      <p>Theyalow</p>
+      <div id="footer-logo">
+        <img src="./Assets/footer-logo.svg" alt="Theyalow logo" />
+        <p>Theyalow</p>
+      </div>
     </footer>
   </body>
 </html>
