@@ -42,81 +42,131 @@
       </nav>
     </header>
     <main>
-      <section id="title-section">
-        <div id="player">
-          <picture class="image-container">
-            <img
-              id="video-image"
-              srcset="/Assets/video-mobile.png 640w, ./Assets/video-dt.png 641w"
-              sizes="(max-width: 1000px) 640px,
-         641px"
-              src="./Assets/video-dt.png"
-              alt="Video of 3 birds"
-            />
-            <button class="play-circle-button" type="button">
-              <img
-                class="play-circle-img"
-                src="./Assets/play-circle.svg"
-                alt="play"
-              />
-            </button>
-            <div id="control-container">
-              <img id="square-play" src="./Assets/square-play.png" alt="" />
-              <div id="slider-container">
-                <img
-                  id="back-slider"
-                  src="./Assets/rounded-rectangle.png"
-                  alt=""
-                />
-                <img id="progress" src="./Assets/progress-bar.png" alt="" />
-              </div>
-              <img id="volume" src="./Assets/volume.png" alt="" />
-            </div>
-          </picture>
+      <section id="title-container">
+        <div class="control" id="left">
+          <img src="./Assets/left.svg" alt="" />
         </div>
-        <div id="title-text">
-          <h2>The cool <span>the minimal</span></h2>
+        <div class="control" id="right">
+          <img src="./Assets/right.svg" alt="" />
+        </div>
+        <div id="title-section">
+          <div id="player">
+            <picture class="image-container">
+              <img
+                id="video-image"
+                srcset="
+                  /Assets/video-mobile.png 640w,
+                  ./Assets/video-dt.png    641w
+                "
+                sizes="(max-width: 1000px) 640px,
+           641px"
+                src="./Assets/video-dt.png"
+                alt="Video of 3 birds"
+              />
+              <button class="play-circle-button" type="button">
+                <img
+                  class="play-circle-img"
+                  src="./Assets/play-circle.svg"
+                  alt="play"
+                />
+              </button>
+              <div id="control-container">
+                <img id="square-play" src="./Assets/square-play.png" alt="" />
+                <div id="slider-container">
+                  <img
+                    id="back-slider"
+                    src="./Assets/rounded-rectangle.png"
+                    alt=""
+                  />
+                  <img id="progress" src="./Assets/progress-bar.png" alt="" />
+                </div>
+                <img id="volume" src="./Assets/volume.png" alt="" />
+              </div>
+            </picture>
+          </div>
+          <div id="title-text">
+            <h2>The cool <span>the minimal</span></h2>
+          </div>
         </div>
       </section>
       <section id="midbar-container">
         <div id="midbar">
           <figure class="midbar-item">
-            <img class="midbar-img" src="./Assets/download.png" alt="" />
+            <img
+              class="midbar-img"
+              srcset="/Assets/download.png 90w, ./Assets/download-dt.svg 110w"
+              sizes="(max-width: 1000px) 90px,
+       110px"
+              src="./Assets/download.png"
+              alt=""
+            />
             <figcaption>Better Design</figcaption>
           </figure>
-          <figure class="midbar-item">
-            <img class="midbar-img" src="./Assets/leaf.png" alt="" />
+          <figure class="midbar-item" id="midbar-item-center">
+            <img
+              class="midbar-img"
+              srcset="/Assets/leaf.png 67w, ./Assets/leaf-dt.svg 92w"
+              sizes="(max-width: 1000px) 67px,
+       92px"
+              src="./Assets/leaf.png"
+              alt=""
+            />
             <figcaption>Customise</figcaption>
           </figure>
           <figure class="midbar-item">
-            <img class="midbar-img" src="./Assets/plane.png" alt="" />
+            <img
+              class="midbar-img"
+              srcset="/Assets/plane.png 69w, ./Assets/plane-dt.svg 82w"
+              sizes="(max-width: 1000px) 82px,
+       69px "
+              src="./Assets/plane.png"
+              alt=""
+            />
             <figcaption>Its free</figcaption>
           </figure>
         </div>
       </section>
-      <section id="section-1">
-        <div id="sec-1-text">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut
-          </p>
-          <button id="expand-button">
-            <img id="expand-icon" src="./Assets/expand.svg" alt="" />
-          </button>
+      <section id="section-1-bg">
+        <div id="section-1-container">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <div id="section-1">
+            <div id="sec-1-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut
+              </p>
+              <button class="expand-button">
+                <img class="expand-icon" src="./Assets/expand.svg" alt="" />
+              </button>
+            </div>
+            <picture class="image-container" id="sec-1-img">
+              <img
+                src="./Assets/man-monkey.png"
+                alt="Still video of man and monkey"
+              />
+              <button class="play-circle-button" type="button">
+                <img
+                  class="play-circle-img"
+                  src="./Assets/play-circle.svg"
+                  alt=""
+                />
+              </button>
+            </picture>
+            <div id="twitter-dt">
+              <p>22</p>
+              <img src="./Assets/twitter.svg" alt="twitter" />
+              <button type="button" class="expand-button">
+                <img class="expand-icon" src="./Assets/expand.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div id="date">
+            <img src="./Assets/date.png" alt="date" />
+          </div>
+          <div id="slider-dt">
+            <img src="./Assets/slider-dt.svg" alt="" />
+          </div>
         </div>
-        <picture class="image-container" id="sec-1-img">
-          <img
-            src="./Assets/man-monkey.png"
-            alt="Still video of man and monkey"
-          />
-          <button class="play-circle-button" type="button">
-            <img
-              class="play-circle-img"
-              src="./Assets/play-circle.svg"
-              alt=""
-            />
-          </button>
-        </picture>
       </section>
       <section id="twitter-section">
         <picture>
@@ -145,18 +195,37 @@
       </section>
       <section class="section-2">
         <h2>Lorem ipsum dolor sit amet</h2>
-        <picture>
-          <img
-            src="./Assets/its-free-mob.png"
-            alt="100% free sticker ontop of deskop, tablet, and phone. "
-          />
-        </picture>
+        <div id="sec-2-container">
+          <picture>
+            <img
+              src="./Assets/its-free-mob.png"
+              alt="100% free sticker ontop of deskop, tablet, and phone. "
+            />
+          </picture>
+          <ul id="list">
+            <li class="list-item">Sed ut perspiciatis unde omnis copy</li>
+            <li class="list-item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+            </li>
+            <li class="list-item">Sed ut perspiciatis unde omnis copy</li>
+            <li class="list-item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <div id="footer-logo">
-        <img src="./Assets/footer-logo.svg" alt="Theyalow logo" />
-        <p>Theyalow</p>
+      <div class="footer-con">
+        <div id="footer-logo">
+          <img
+            srcset="./Assets/footer-logo.svg 32px, ./Assets/Logo - mob.svg 38w"
+            sizes="(max-width: 1000px) 32px, 38px"
+            src="./Assets/Logo - mob.svg"
+            alt="Logo"
+          />
+          <p>Theyalow</p>
+        </div>
       </div>
     </footer>
   </body>
