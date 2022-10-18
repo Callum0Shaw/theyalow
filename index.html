@@ -9,65 +9,134 @@
   </head>
   <body>
     <header>
+      <div id="nav-logo">
+        <img src="./Assets/Logo - mob.svg" alt="Logo" />
+        <h1>Theyalow</h1>
+      </div>
       <nav>
-        <ul>
-          <li>
-            <img src="#" alt="Logo" />
-            <h1>Theyalow</h1>
+        <ul id="nav-bar">
+          <li class="nav-link-container">
+            <a class="nav-link" id="left-nav-item" href=""
+              ><img src="./Assets/profile-icon.svg" alt="" />
+              <p class="nav-link-text">About us</p></a
+            >
           </li>
-          <li><a href=""><img src="" alt="">About us</a></li>
-          <li><a href=""><img src="" alt="">Services</a></li>
-          <li><a href=""><img src="" alt="">Contact</a></li>
+          <li class="nav-link-container">
+            <a class="nav-link" id="middle-nav-item" href=""
+              ><img src="./Assets/wrench-icon.svg" alt="" />
+              <p class="nav-link-text">Services</p></a
+            >
+          </li>
+          <li class="nav-link-container">
+            <a class="nav-link" id="right-nav-item" href=""
+              ><img src="./Assets/mail-icon.svg" alt="" />
+              <p class="nav-link-text">Contact</p></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="player">
-        <picture>
-          <img src="#" alt="Video of 3 birds">
+        <picture class="image-container">
+          <img
+            id="video-image"
+            src="./Assets/video-mobile.png"
+            alt="Video of 3 birds"
+          />
+          <button class="play-circle-button" type="button">
+            <img
+              class="play-circle-img"
+              src="./Assets/play-circle.svg"
+              alt="play"
+            />
+          </button>
+          <div id="control-container">
+            <img id="square-play" src="./Assets/square-play.png" alt="" />
+            <div id="slider-container">
+              <img
+                id="back-slider"
+                src="./Assets/rounded-rectangle.png"
+                alt=""
+              />
+              <img id="progress" src="./Assets/progress-bar.png" alt="" />
+            </div>
+            <img id="volume" src="./Assets/volume.png" alt="" />
+          </div>
         </picture>
-        <div id="video-slider">
-
-        </div>
+        <div id="video-slider"></div>
       </section>
       <section id="midbar">
-        <figure><img src="" alt=""><figcaption>Better Design</figcaption></figure>
-        <figure><img src="" alt=""><figcaption>Customise</figcaption></figure>
-        <figure><img src="" alt=""><figcaption>Its free</figcaption></figure>
+        <figure class="midbar-item">
+          <img class="midbar-img" src="./Assets/download.png" alt="" />
+          <figcaption>Better Design</figcaption>
+        </figure>
+        <figure class="midbar-item">
+          <img class="midbar-img" src="./Assets/leaf.png" alt="" />
+          <figcaption>Customise</figcaption>
+        </figure>
+        <figure class="midbar-item">
+          <img class="midbar-img" src="./Assets/plane.png" alt="" />
+          <figcaption>Its free</figcaption>
+        </figure>
       </section>
       <section id="section-1">
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maiores numquam iste accusantium natus, animi neque asperiores fugit, nihil vero amet quaerat! Explicabo, ex hic. Doloremque, dolor odit? Suscipit, beatae?</p>
+        <div id="sec-1-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          </p>
+          <button id="expand-button">
+            <img id="expand-icon" src="./Assets/expand.svg" alt="">
+          </button>
         </div>
-        <picture>
-          <img src="" alt="Still video of man and monkey">
+        <picture class="image-container" id="sec-1-img">
+          <img
+            src="./Assets/man-monkey.png"
+            alt="Still video of man and monkey"
+          />
+          <button class="play-circle-button" type="button">
+            <img
+              class="play-circle-img"
+              src="./Assets/play-circle.svg"
+              alt=""
+            />
+          </button>
         </picture>
       </section>
-      <section id="twitter">
+      <section id="twitter-section">
         <picture>
-          <img src="" alt="twitter logo">
+          <img src="./Assets/twitter.svg" alt="twitter logo" />
         </picture>
-        <div>
-          <ul>
-            <li><p>Daily Mobile UI Design Inspiration #1  via @cssauthor/p></li>
-            <li><p>Daily Mobile UI Design Inspiration #2  via @cssauthor/p></li>
-            <li><p>Daily Mobile UI Design Inspiration #3  via @cssauthor/p></li>
+        <div id="twitter-right">
+          <ul id="twitter-feed">
+            <li>
+              <p>Daily Mobile UI Design Inspiration #1 via @cssauthor/p></p>
+            </li>
+            <li>
+              <p>Daily Mobile UI Design Inspiration #2 via @cssauthor/p></p>
+            </li>
+            <li>
+              <p>Daily Mobile UI Design Inspiration #3 via @cssauthor/p></p>
+            </li>
           </ul>
-          <form action="">
-            <input type="text" name="" id="">
+          <form id="twitter-form" action="">
+            <input type="text" name="" id="" />
             <button type="submit">Tweet</button>
           </form>
         </div>
       </section>
       <section class="section-2">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <picture>
-            <img src="" alt="100% free sticker ontop of deskop, tablet, and phone. ">
-          </picture>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <picture>
+          <img
+            src=""
+            alt="100% free sticker ontop of deskop, tablet, and phone. "
+          />
+        </picture>
       </section>
     </main>
     <footer>
-      <img src="" alt="Theyalow logo">
+      <img src="" alt="Theyalow logo" />
       <p>Theyalow</p>
     </footer>
   </body>
